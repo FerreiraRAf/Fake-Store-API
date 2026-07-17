@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FakeStore - Produtos</title>
+    <link rel="stylesheet" href="../styles/produtos.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>🛍️ FakeStore</h1>
+            </div>
+            <div class="header-actions">
+                <button class="btn-cart" onclick="window.location.href='carrinho.html'">🛒<span class="cart-count" id="cartICount">3</span></button>
+                <button class="btn-logout" onclick="window.location.href='login.html'">Sair</button>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="filters">
+        <div class="filters-container">
+            <div class="search-box">
+                <input type="text" placeholder="🔍 Buscar produtos..." class="search-input" id="searchInput">
+            </div>
+            <div class="filter-options">
+                <select class="filter-select" id="categorySelect">
+                    <option value="">Todas as categorias</option>
+                    <option value="electronics">Eletrônicos</option>
+                    <option value="jewelery">Jóias</option>
+                    <option value="men's clothing">Roupas Masculinas</option>
+                    <option value="women's clothing">Roupas Femininas</option>
+                </select>
+                <select class="filter-select" id="sortSelect">
+                    <option value="">Ordenar por</option>
+                    <option value="price-asc">Preço: Menor para Maior</option>
+                    <option value="price-desc">Preço: Maior para Menor</option>
+                    <option value="name">Nome</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <main class="products">
+        <div class="products-container" id="productsContainer"></div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 FakeStore - Projeto de estudo</p>
+    </footer>
+
+    <script src="../js/produtos.js"></script>
+    <script src="../js/carrinho.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FakeStore - Login</title>
+    <link rel="stylesheet" href="../styles/login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <div class="logo">
+                <h1>🛍️ FakeStore</h1>
+                <p>Faça login para continuar</p>
+            </div>
+
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" placeholder="Seu nome" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" placeholder="••••••••" required>
+                </div>
+
+                <button type="submit" class="btn-login">Entrar</button>
+                <button type="button" class="btn-login" onclick="window.location.href='criarUsuario.html'">Cadastrese</button>
+
+                <div id="resultado"></div>
+            </form>
+
+            <div class="demo-info">
+                <p>🔑 Demo: use qualquer nome de usuário e senha com 6+ caracteres</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/login.js"></script>
+</body>
+</html>

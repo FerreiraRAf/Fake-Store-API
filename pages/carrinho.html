@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FakeStore - Carrinho</title>
+    <link rel="stylesheet" href="../styles/carrinho.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>🛍️ FakeStore</h1>
+            </div>
+            <div class="header-actions">
+                <button class="btn-logout" onclick="window.location.href='produtos.html'">Voltar</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="cart-container">
+        <div class="cart-header">
+            <h2>🛒 Meu Carrinho</h2>
+            <span class="cart-items-count" id="cartItemsCount">0 itens</span>
+        </div>
+
+        <div class="cart-content">
+
+            <div class="cart-items" id="cartItemsContainer">
+            </div>
+
+
+            <div class="cart-summary">
+                <h3>Resumo do Pedido</h3>
+                
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="cartSubtotal">R$ 0,00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Frete</span>
+                    <span>R$ 0,00</span>
+                </div>
+                <div class="summary-row discount">
+                    <span>Desconto</span>
+                    <span>- R$ 0,00</span>
+                </div>
+                <div class="summary-total">
+                    <span>Total</span>
+                    <span id="cartTotal">R$ 0,00</span>
+                </div>
+
+                <div class="coupon-section">
+                    <input type="text" placeholder="Código do cupom" class="coupon-input">
+                    <button class="coupon-btn">Aplicar</button>
+                </div>
+
+                <button class="btn-checkout">Finalizar Compra</button>
+
+                <div class="payment-methods">
+                    <p>Pagamento seguro via:</p>
+                    <div class="payment-icons">
+                        <span>💳</span>
+                        <span>📱</span>
+                        <span>🏦</span>
+                        <span>🔒</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 FakeStore - Projeto de estudo</p>
+    </footer>
+
+    <script src="../js/carrinho.js"></script>
+</body>
+</html>
