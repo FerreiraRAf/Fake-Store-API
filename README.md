@@ -186,16 +186,6 @@ O projeto utiliza um design **moderno e minimalista** com as seguintes caracter�
 3. **LocalStorage**: Os dados de autenticação são salvos apenas localmente.
 4. **Educacional**: Este projeto foi criado para fins de aprendizado e demonstração.
 
-## 🤝 Contribuição
-
-Sinta-se à vontade para contribuir com melhorias:
-
-1. Fork este repositório
-2. Crie uma branch: `git checkout -b minha-melhoria`
-3. Commit suas mudanças: `git commit -m 'Adicionei X funcionalidade'`
-4. Push: `git push origin minha-melhoria`
-5. Abra um Pull Request
-
 ## 📄 Licença
 
 Este projeto é de código aberto e pode ser usado livremente para fins educacionais.
